@@ -1,0 +1,57 @@
+body{
+  margin:0;
+  padding: 0;
+}
+.main-content{
+  width: 350px;
+  padding: 32px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#siteToRemove{
+  border: none;
+  outline: navajowhite;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  width: 100%;
+}
+#siteToRemove::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+#siteToRemove:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+#siteToRemove::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+.buttons-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-group button{
+  margin: 0 4px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+}
+#addSite{
+  background: #5287df;
+}
+#deleteSite, #clearAll{
+  background-color: #f16b6b;
+}

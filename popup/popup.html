@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>History Destroyer</title>
+	  <!-- <script src="jquery.js" type="text/javascript"></script> Подключаю jquery -->
+	<link href="popup.css" rel="stylesheet" type="text/css"/><!-- Подключаю стили-->
+  </head>
+  <body>
+    <div class="main-content">
+      <input id="siteToRemove" placeholder="Site name here" type="text">
+      <div class="buttons-group">
+        <button id="addSite">Add site to blacklist</button>
+        <button id="deleteSite">Delete site from blacklist</button>
+        <button id="clearAll">Clear all the history</button>
+      </div>
+      <h4 id="statusMessage">Saved!</h4>
+    </div>
+    <script src="popup.js"></script><!-- скрипт, выполняющийся при нажатии на иконку расширения-->
+  </body>
+</html>

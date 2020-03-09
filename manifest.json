@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "History Destroyer",
+  "version": "1.0",
+  
+  "icons": {
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://*/*" ],
+      "js": [ "content.js" ]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "history"
+  ],
+  "browser_action": {
+    "default_title": "History Destroyer",
+    "default_popup": "popup/popup.html"
+  }
+
+}
