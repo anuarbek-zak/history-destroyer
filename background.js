@@ -1,5 +1,6 @@
   chrome.history.onVisited.addListener(function(historyItem){
     chrome.storage.local.get('sitesToRemove', function(data){
+      if(!data.sitesToRemove) return;
       const removeThisSite = data.sitesToRemove.some(siteName => {
         return historyItem.url.includes(siteName);
       });
